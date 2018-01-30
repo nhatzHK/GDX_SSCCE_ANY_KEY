@@ -24,9 +24,13 @@ _libgdx 1.9.8_
 
 #### Environment
 **OS:** Linux
+
 **Kernel:** x86_64 Linux 4.14.15-1-ARCH
+
 **WM:** i3wm
+
 **CPU:** Intel Core i7-5600U @ 4x 3.2GHz
+
 **GPU:** Mesa DRI Intel(R) HD Graphics 5500 (Broadwell GT2)
 
 #### Affected platforms
