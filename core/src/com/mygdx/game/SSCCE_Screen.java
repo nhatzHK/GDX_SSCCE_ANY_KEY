@@ -27,6 +27,7 @@ public class SSCCE_Screen implements Screen {
 
 	@Override public void render (float delta) {
 
+		// After dragging the window this will always evaluate to false
 		if (Gdx.input.isKeyPressed (Input.Keys.ANY_KEY)) {
 			if (Gdx.input.isKeyPressed (Input.Keys.DOWN)) {
 				position.y -= 5;
@@ -53,6 +54,11 @@ public class SSCCE_Screen implements Screen {
 			{
 				position.y = Gdx.graphics.getHeight () - img.getHeight ();
 			}
+		}
+
+		// The key presses are still detected correctly
+		if (Gdx.input.isKeyPressed (Input.Keys.SPACE)) {
+			Gdx.app.log ("Key presed", "Spacet");
 		}
 
 		Gdx.gl.glClearColor (1, 0, 0, 1);
