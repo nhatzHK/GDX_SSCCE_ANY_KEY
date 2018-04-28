@@ -1,6 +1,8 @@
 # GDX_SSCCE_ANY_KEY
 SSCCE of the any key bug on Linux, libgdx
 
+#### [Ticket](https://github.com/libgdx/libgdx/issues/5069)
+
 After dragging the application window, the `Gdx.input.isKeyPressed()` method always returns false when `Input.Keys.ANY_KEY` is passed as parameter.
 
 #### Issue details
